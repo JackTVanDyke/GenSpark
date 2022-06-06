@@ -12,18 +12,31 @@
       <h1>Contact Us</h1>
       <form action="" method="post">
         <div class="form-control">
-          <input type="text" placeholder="" required id="name" />
           <label for="name">Name</label>
+
+          <input type="text" placeholder="" required id="name" />
         </div>
         <div class="form-control">
-          <input type="email" placeholder="" required id="email" />
           <label for="email">Email</label>
+
+          <input type="email" placeholder="" required id="email" />
         </div>
         <div class="form-control">
+          <label for="phonenum">Phone #</label>
+
+          <input type="text" placeholder="" required id="phonenum" />
+        </div>
+        <div class="form-control">
+          <label for="subject">Subject</label>
+
+          <input type="text" placeholder="" required id="subject" />
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+
           <textarea
             name="user_message"
             id="message"
-            placeholder="Your Message"
             cols="30"
             rows="10"
           ></textarea>
@@ -31,6 +44,5 @@
         <button class="btn">Submit</button>
       </form>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
