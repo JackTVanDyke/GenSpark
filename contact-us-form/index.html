@@ -11,32 +11,27 @@
   <body>
     <div class="container">
       <h1>Contact Us</h1>
-      <form action="" method="post">
+      <form action="" method="post" id="contactUs">
         <div class="form-control">
           <label for="name">Name</label>
-
-          <input type="text" placeholder="" required id="name" />
+          <input type="text" name="name" placeholder="" id="name" />
         </div>
         <div class="form-control">
           <label for="email">Email</label>
-
-          <input type="email" placeholder="" required id="email" />
+          <input type="email" name="email" placeholder="" id="email" />
         </div>
         <div class="form-control">
           <label for="phonenum">Phone #</label>
-
-          <input type="text" placeholder="" required id="phonenum" />
+          <input type="text" name="phonenum" placeholder="" id="phonenum" />
         </div>
         <div class="form-control">
           <label for="subject">Subject</label>
-
-          <input type="text" placeholder="" required id="subject" />
+          <input type="text" name="subject" placeholder="" id="subject" />
         </div>
         <div class="form-control">
           <label for="message">Message</label>
-
           <textarea
-            name="user_message"
+            name="usermessage"
             id="message"
             cols="30"
             rows="10"
@@ -46,8 +41,9 @@
           class="g-recaptcha"
           data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"
         ></div>
-        <button class="btn">Submit</button>
+        <a href="html/contactdata.html"><button class="btn">Submit</button></a>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -91,7 +91,6 @@ body {
   outline: 0;
 }
 
-.form-control input:focus,
 .form-control input:valid {
   outline: 0;
   border-bottom-color: lightblue;

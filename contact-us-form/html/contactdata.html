@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Contact Data</title>
+  </head>
+  <body>
+    <table class="table">
+      <thead>
+        <tr>
+          <th colspan="2">Contact Us Form Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name :</td>
+          <td id="nameData"></td>
+        </tr>
+        <tr>
+          <td>Email :</td>
+          <td id="emailData"></td>
+        </tr>
+        <tr>
+          <td>Phone # :</td>
+          <td id="phoneNumData"></td>
+        </tr>
+        <tr>
+          <td>Subject :</td>
+          <td id="subjectData"></td>
+        </tr>
+        <tr>
+          <td>Message :</td>
+          <td id="messageData"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      document.getElementById("nameData").innerHTML =
+        localStorage.getItem("nameData");
+      document.getElementById("emailData").innerHTML =
+        localStorage.getItem("emailData");
+      document.getElementById("phoneNumData").innerHTML =
+        localStorage.getItem("phoneData");
+      document.getElementById("subjectData").innerHTML =
+        localStorage.getItem("subjectData");
+      document.getElementById("messageData").innerHTML =
+        localStorage.getItem("messageData");
+    </script>
+  </body>
+</html>
